@@ -158,7 +158,5 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:text="x" />
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
