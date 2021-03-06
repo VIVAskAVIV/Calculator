@@ -8,269 +8,157 @@
 
     <TextView
         android:id="@+id/calcucatorText"
-        android:layout_width="290dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="265dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="186dp"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/clear"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/number0"
-        android:layout_width="136dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="185dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/equal"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/number8"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="8"
-        app:layout_constraintBottom_toTopOf="@+id/number0"
-        app:layout_constraintEnd_toStartOf="@+id/number9"
-        app:layout_constraintStart_toEndOf="@+id/number7"
-        app:layout_constraintTop_toBottomOf="@+id/number5" />
-
-    <Button
-        android:id="@+id/number2"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="2"
-        app:layout_constraintBottom_toTopOf="@+id/number5"
-        app:layout_constraintEnd_toStartOf="@+id/number3"
-        app:layout_constraintStart_toEndOf="@+id/number1"
-        app:layout_constraintTop_toBottomOf="@+id/calcucatorText" />
-
-    <Button
-        android:id="@+id/number5"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="5"
-        app:layout_constraintBottom_toTopOf="@+id/number8"
-        app:layout_constraintEnd_toStartOf="@+id/number6"
-        app:layout_constraintStart_toEndOf="@+id/number4"
-        app:layout_constraintTop_toBottomOf="@+id/number2" />
-
-    <Button
-        android:id="@+id/clear"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="8dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:paddingLeft="4dp"
-        android:paddingRight="4dp"
-        android:text="AC"
-        app:layout_constraintBottom_toTopOf="@+id/number1"
-        app:layout_constraintEnd_toStartOf="@+id/plus"
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calcucatorText" />
+        app:layout_constraintTop_toBottomOf="@+id/calcucatorText">
 
-    <Button
-        android:id="@+id/number4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="4"
-        app:layout_constraintBottom_toTopOf="@+id/number7"
-        app:layout_constraintEnd_toStartOf="@+id/number5"
+        <Button
+            android:id="@+id/number1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/number2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/number3"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="AC" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number1" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
-    <Button
-        android:id="@+id/number7"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="7"
-        app:layout_constraintBottom_toTopOf="@+id/number0"
-        app:layout_constraintEnd_toStartOf="@+id/number8"
+        <Button
+            android:id="@+id/number4"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/number5"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/number6"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number4" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
-    <Button
-        android:id="@+id/equal"
-        android:layout_width="136dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="185dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="="
+        <Button
+            android:id="@+id/number7"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/number8"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/number9"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/number0" />
-
-    <Button
-        android:id="@+id/number6"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="6"
-        app:layout_constraintBottom_toTopOf="@+id/number9"
-        app:layout_constraintEnd_toStartOf="@+id/multi"
-        app:layout_constraintStart_toEndOf="@+id/number5"
-        app:layout_constraintTop_toBottomOf="@+id/number3" />
-
-    <Button
-        android:id="@+id/plus"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="8dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="+"
-        app:layout_constraintBottom_toTopOf="@+id/minus"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/clear"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/number9"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="9"
-        app:layout_constraintBottom_toTopOf="@+id/equal"
-        app:layout_constraintEnd_toStartOf="@+id/division"
-        app:layout_constraintStart_toEndOf="@+id/number8"
-        app:layout_constraintTop_toBottomOf="@+id/number6" />
-
-    <Button
-        android:id="@+id/multi"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="8dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="x"
-        app:layout_constraintBottom_toTopOf="@+id/division"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/number6"
-        app:layout_constraintTop_toBottomOf="@+id/minus" />
-
-    <Button
-        android:id="@+id/number3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="3"
-        app:layout_constraintBottom_toTopOf="@+id/number6"
-        app:layout_constraintEnd_toStartOf="@+id/minus"
-        app:layout_constraintStart_toEndOf="@+id/number2"
-        app:layout_constraintTop_toBottomOf="@+id/calcucatorText" />
-
-    <Button
-        android:id="@+id/minus"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="8dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="-"
-        app:layout_constraintBottom_toTopOf="@+id/multi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/number3"
-        app:layout_constraintTop_toBottomOf="@+id/plus" />
-
-    <Button
-        android:id="@+id/division"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="16dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="/"
-        app:layout_constraintBottom_toTopOf="@+id/equal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/number9"
-        app:layout_constraintTop_toBottomOf="@+id/multi" />
-
-    <Button
-        android:id="@+id/number1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:text="1"
-        app:layout_constraintBottom_toTopOf="@+id/number4"
-        app:layout_constraintEnd_toStartOf="@+id/number2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clear" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/number0"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/division"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/multi"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="x" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

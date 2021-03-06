@@ -3,7 +3,6 @@ package com.example.calculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -17,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         textView = findViewById(R.id.calcucatorText);
+        textView.setText("");
 
         /* Много кода который обрабатывает кнопки */
         Button button = findViewById(R.id.number1);
@@ -92,7 +92,8 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.equal);
         button.setOnClickListener(v -> {
             String result = calculator.operate();
-            textView.setText(result);
+            if (!result.equals("E"))
+                textView.setText(result);
         });
         button = findViewById(R.id.clear);
         button.setOnClickListener(v -> {
